@@ -87,7 +87,7 @@ client.on('messageCreate', async (message) => {
 				 * voice channel.
 				 */
 				connection.subscribe(player);
-				await message.reply('Playing now!');
+				await message.reply('Renderizar lista de mensagens');
 			} catch (error) {
 				/**
 				 * Unable to connect to the voice channel within 30 seconds :(
@@ -97,8 +97,9 @@ client.on('messageCreate', async (message) => {
 		} else {
 			/**
 			 * The user is not in a voice channel.
+       * Atualizar esses textos para internacionalização
 			 */
-			void message.reply('Join a voice channel then try again!');
+			void message.reply('Por favor, entre em um canal de voz');
 		}
 	}
 });
