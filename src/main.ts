@@ -10,6 +10,7 @@ import { createDiscordJSAdapter } from './adapter';
 import { client } from './client'
 
 import dotenv from 'dotenv'
+import { logger } from './utils';
 
 dotenv.config();
 
@@ -65,7 +66,7 @@ async function connectToChannel(channel: VoiceBasedChannel) {
 }
 
 client.on('ready', async () => {
-	console.log('Discord.js client is ready!');
+	logger.info('Sonoplasta do Faro is ready!');
 });
 
 client.on('messageCreate', async (message) => {
