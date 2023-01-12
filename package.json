@@ -9,8 +9,10 @@
     "discord.js": "^13.10.3",
     "dotenv": "^16.0.3",
     "eslint-config-prettier": "^8.6.0",
+    "libsodium-wrappers": "^0.7.10",
     "pino": "^8.8.0",
-    "pino-pretty": "^9.1.1"
+    "pino-pretty": "^9.1.1",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "@types/jest": "^29.2.5",
@@ -27,11 +29,10 @@
     "nodemon": "^2.0.20",
     "prettier": "^2.8.1",
     "ts-jest": "^29.0.3",
-    "ts-node": "^10.9.1",
     "typescript": "^4.9.4"
   },
   "scripts": {
-    "start": "tsc && node dist/main.js",
+    "start": "tsc && node dist/src/main.js",
     "dev": "npx nodemon",
     "test": "jest",
     "test:watch": "jest --watch",
